@@ -495,7 +495,7 @@ end
 end
 end
 -- setsudo
-    if tonumber (msg.from.id) ==219201071  then 
+    if tonumber (msg.from.id) ==92247090  then 
        if matches[1]:lower() == "setsudo" then 
           table.insert(_config.sudo_users, tonumber(matches[2])) 
       print(matches[2]..' <i>added to sudo users</i>') 
@@ -624,12 +624,12 @@ channel_get_users(receiver, check_member_super_deleted,{receiver = receiver, msg
  end
 -- serverinfo
     if matches[1] == "serverinfo" and is_sudo(msg) then
-     local f = io.popen("sh /root/darkdiamond/plugins/tdserver.sh") 
+     local f = io.popen("sh /ubuntu/zxcabbasdd3/plugins/tdserver.sh") 
      return ( f:read("*a") ) 
   end
 
 -- send plug
-local mohammad = 219201071
+local mohammad = 92247090
 if matches[1]:lower() == "send" and msg.from.id == tonumber(mohammad) then 
     local file = matches[2] 
     if is_sudo(msg) or is_vip(msg) then 
